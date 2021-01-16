@@ -188,7 +188,7 @@ body {
 }
 
 .intro {
-  background-image: url(/img/jpeg/Intro-back.jpg);
+  background-image: url(../img/jpeg/Intro-back.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -319,7 +319,7 @@ body {
 }
 
 .about-quality {
-  background-image: url(/img/png/Holder.png);
+  background-image: url(../img/png/Holder.png);
   background-repeat: no-repeat;
   margin: 0 auto 100px auto;
   display: flex;
@@ -349,7 +349,7 @@ body {
 }
 
 .about-quality__logo {
-  background-image: url(/img/png/sprite.png);
+  background-image: url(../img/png/sprite.png);
   background-repeat: no-repeat;
   margin-right: 35px;
 }
@@ -658,7 +658,7 @@ body {
 }
 
 .testimonials {
-  background-image: url(/img/jpeg/Reviews-back.jpg);
+  background-image: url(../img/jpeg/Reviews-back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -1183,7 +1183,7 @@ body {
 
 @media screen and (max-width: 690px) {
   .about-quality {
-    background-image: url(/img/png/Holder-transformed.png);
+    background-image: url(../img/png/Holder-transformed.png);
     background-position: center;
     background-size: cover;
     max-width: 200px;
