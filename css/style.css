@@ -1183,7 +1183,7 @@ body {
 
 @media screen and (max-width: 690px) {
   .about-quality {
-    background-image: url(../img/png/Holder-transformed.png);
+    background-image: url(/img/png/Holder-transformed.png);
     background-position: center;
     background-size: cover;
     max-width: 200px;
@@ -1299,6 +1299,7 @@ body {
     justify-content: space-between;
     display: flex;
     box-sizing: border-box;
+    flex-direction: column;
   }
 }
 
@@ -1310,8 +1311,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .about-items .tab-content__images img {
-    width: 50%;
+    width: 100%;
     padding: 5px;
+    max-height: none;
     box-sizing: border-box;
   }
 }
