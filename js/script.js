@@ -1,3 +1,5 @@
+//Мягкая прокрутка
+
 $(function () {
     $('#menu').on('click', 'a', function (event) {
         event.preventDefault();
@@ -20,6 +22,7 @@ $(function () {
   });
 });
 
+//Прокрутка фиксированного меню в область видимости
 let sections = $('section')
   , nav = $('nav')
   , nav_height = $('header').outerHeight();
@@ -77,7 +80,7 @@ function isScrolledIntoView(elem) {
       $('html, body').animate({scrollTop:0},500);
     });
     
-
+// Табы
     $('.tab-link').on('click', function(e){
       let contentId = $(this).attr('data-id');
       $(this).parents('.about-items').find('.active').removeClass('active');
@@ -86,7 +89,7 @@ function isScrolledIntoView(elem) {
       $("[data-content-id='" + contentId + "']").fadeIn(150).css('display', 'flex').addClass('active');
     })
 
-
+//Слайдер с товарами
 $('.products-slider').slick({
       dots: false,
       infinite: true,
@@ -113,7 +116,7 @@ $('.products-slider').slick({
         }
       ]
   });
-  
+  //Слайдер с отзывами
   $('.testimonials-slider').slick({
       dots: false,
       infinite: true,
@@ -126,7 +129,8 @@ $('.products-slider').slick({
       prevArrow: '<button id="leftt" type="button" class="prev"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="20" viewBox="0 0 40 20"><path id="Lefft" class="cls-1" d="M0.274,9.37h0L9.363,0.33a0.912,0.912,0,0,1,1.281-.1,0.9,0.9,0,0,1,.1,1.275,0.871,0.871,0,0,1-.1.1L3.11,9.108H39.091a0.9,0.9,0,1,1,0,1.808H3.11l7.534,7.494a0.9,0.9,0,0,1,.1,1.274,0.912,0.912,0,0,1-1.281.1,0.889,0.889,0,0,1-.1-0.1l-9.088-9.04A0.9,0.9,0,0,1,.274,9.37Z"/></svg></button>',
       nextArrow: '<button id="rightt" type="button" class="next"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="22" viewBox="0 0 40 22"><path id="Righht" class="cls-1" d="M39.726,10.352h0L30.637,1.269a0.909,0.909,0,1,0-1.282,1.281l7.534,7.539H0.909a0.908,0.908,0,1,0,0,1.816H36.89l-7.534,7.53a0.909,0.909,0,0,0,1.182,1.38,0.861,0.861,0,0,0,.1-0.1l9.089-9.082A0.908,0.908,0,0,0,39.726,10.352Z"/></svg></button>'
   });
-
+  
+//Аккордеон
   $('.faqs-item__expand').on('click', function(){
     let item = $(this);
     let faqItem = $(this).parents('.faqs-item');
