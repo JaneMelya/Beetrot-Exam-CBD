@@ -203,6 +203,9 @@
   @media screen and (max-width: 1200px) {
       background-size: cover;
   }
+  @media screen and (max-width: 780px) {
+      background-image: url(../img/jpeg/Intro-back-mini.jpg);
+  }
   &-description {
       @media screen and (max-width: 1440px) {
           right: 50px;
@@ -466,6 +469,9 @@
 }
 
 .testimonials {
+  @media screen and (max-width: 780px) {
+    background-image: url(../img/jpeg/Reviews-back-mini.jpg);
+}
 &-slider  {
   @media screen and (max-width: 768px) {
     margin-top: 50px;

@@ -1100,6 +1100,12 @@ body {
   }
 }
 
+@media screen and (max-width: 780px) {
+  .intro {
+    background-image: url(../img/jpeg/Intro-back-mini.jpg);
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .intro-description {
     right: 50px;
@@ -1380,6 +1386,12 @@ body {
 @media screen and (max-width: 690px) {
   .faqs-item p {
     padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .testimonials {
+    background-image: url(../img/jpeg/Reviews-back-mini.jpg);
   }
 }
 
