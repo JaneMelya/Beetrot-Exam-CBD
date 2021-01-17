@@ -1,26 +1,14 @@
 $(function () {
     let headerHeight = $('header').outerHeight();
-    $('#menu, .intro-description').on('click', 'a', function (event) {
+    $('#menu, #mmenu, .intro-description').on('click', 'a', function (event) {
         event.preventDefault();
         $('#menu').find('.active').removeClass('active');
         $(this).addClass('active');
         let id = $(this).attr('href');
         let top = $(id).offset().top;
-        
+        $( "#burger-menu" ).prop( "checked", false );
 
         $('body, html').animate({ scrollTop: top - headerHeight - 20}, 1700);
-    });
-
-    $('#mmenu').on('click', 'a', function (event) {
-      event.preventDefault();
-      $('#mmenu').find('.active').removeClass('active');
-      $(this).addClass('active');
-      let id = $(this).attr('href');
-      let top = $(id).offset().top;
-      
-
-      $('body, html').animate({ scrollTop: top - headerHeight - 20}, 1700);
-      $( "#burger-menu" ).prop( "checked", false );
     });
 
     $('.intro-arrow').on('click', function (event) {
