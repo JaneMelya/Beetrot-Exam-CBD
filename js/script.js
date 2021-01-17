@@ -1,23 +1,42 @@
 $(function () {
-    $('#menu').on('click', 'a', function (event) {
+    let headerHeight = $('header').outerHeight();
+    $('#menu, .intro-description').on('click', 'a', function (event) {
         event.preventDefault();
         $('#menu').find('.active').removeClass('active');
         $(this).addClass('active');
         let id = $(this).attr('href');
         let top = $(id).offset().top;
-        let headerHeight = $('header').outerHeight();
+        
 
         $('body, html').animate({ scrollTop: top - headerHeight - 20}, 1700);
     });
 
-    $('.intro-arrow').on('click', function (event) {
+    $('#mmenu').on('click', 'a', function (event) {
       event.preventDefault();
-
+      $('#mmenu').find('.active').removeClass('active');
+      $(this).addClass('active');
       let id = $(this).attr('href');
       let top = $(id).offset().top;
+      
 
-      $('body, html').animate({ scrollTop: top}, 1700);
-  });
+      $('body, html').animate({ scrollTop: top - headerHeight - 20}, 1700);
+      $( "#burger-menu" ).prop( "checked", false );
+    });
+
+    $('.intro-arrow').on('click', function (event) {
+        event.preventDefault();
+
+        let id = $(this).attr('href');
+        let top = $(id).offset().top;
+
+        $('body, html').animate({ scrollTop: top}, 1700);
+    });
+
+    $('.move-to').on('click', function () {
+      let id = $(this).attr('data-link');
+      let top = $(id).offset().top;
+      $('body, html').animate({ scrollTop: top - headerHeight - 20}, 1700);
+    });
 });
 
 let sections = $('section')

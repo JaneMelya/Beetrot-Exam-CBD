@@ -1183,7 +1183,7 @@ body {
 
 @media screen and (max-width: 690px) {
   .about-quality {
-    background-image: url(/img/png/Holder-transformed.png);
+    background-image: url(../img/png/Holder-transformed.png);
     background-position: center;
     background-size: cover;
     max-width: 200px;
