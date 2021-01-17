@@ -27,11 +27,13 @@ $(function () {
     });
 });
 
-let sections = $('section')
-  , nav = $('nav')
-  , nav_height = $('header').outerHeight();
+
+let sections = $('section'),
+nav = $('nav'), 
+nav_height = $('header').outerHeight();
 
 $(document).scroll(function(){
+
   if ($(window).scrollTop() > 100) {
       $(".header").addClass("header_scroll");
   } else {
@@ -79,7 +81,6 @@ function isScrolledIntoView(elem) {
 
  $(document).ready(function() {
 
-  
     $(".up-button").on("click", function() {
       $('html, body').animate({scrollTop:0},500);
     });
